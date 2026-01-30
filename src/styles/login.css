@@ -1,0 +1,142 @@
+/* Scrollable at Zoom > 125% */
+@media screen and (min-width: 1024px) and (min-height: 768px) and (min-resolution: 120dpi) {
+  body {
+    overflow: auto;
+  }
+}
+/* Responsive Background */
+@media (max-width: 768px) {
+  body {
+    background-position: center;
+    background-size: contain;
+  }
+}
+/* Responsive Background */
+@media (max-width: 768px) {
+  body {
+    background-position: center;
+    background-size: contain;
+  }
+  .title-container {
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+  .title-container img {
+    height: 50px; /* Adjust logo size */
+  }
+  .title-container h1 {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+  .container {
+    padding: 10px; /* Adjust padding */
+  }
+}
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 2;
+}
+.title-container img {
+  height: 80px; /* Increased size */
+  margin-right: 15px;
+}
+.title-container h1 {
+  color: #ffffff;
+  font-size: 2.5rem; /* Increased size */
+  margin-bottom: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none; /* Change this color as needed */
+  z-index: 1;
+}
+
+.container {
+  z-index: 2;
+}
+label {
+  color: #ffffff;
+  font-size: 18px;
+}
+.card-container {
+  perspective: 1000px;
+}
+
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-container.flip .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.glass-effect {
+  background: #ffffff1a;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px #0000001a;
+  backdrop-filter: blur(5px);
+  border: 1px solid #ffffff33;
+}
+
+.card-header {
+  background-color: #000000;
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.btn-primary {
+  background: #510aa7;
+  background: linear-gradient(
+    85deg,
+    rgba(81, 10, 167, 1) 0%,
+    rgba(142, 7, 172, 1) 100%
+  );
+  border: none;
+}
+
+.btn-primary:hover {
+  background: rgb(102, 1, 124);
+  transition: 0.5s all ease-in;
+}
+.footer-text {
+  font-size: 1.2rem; /* Increased font size */
+  color: #ffffff; /* Custom color */
+  font-weight: 650;
+}
+.footer-text a {
+  font-size: 1.2rem; /* Increased font size */
+  color: #000000; /* Custom color */
+  font-weight: 650;
+}

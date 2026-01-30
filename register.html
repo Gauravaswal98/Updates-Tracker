@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8" />
+	<title>Add User Details</title>
+
+	<!-- Site favicon -->
+	<link rel="shortcut icon" href="src/images/tablogo.png">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+	<link rel="stylesheet" type="text/css" href="src/plugins/jquery-steps/jquery.steps.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
+		crossorigin="anonymous"></script>
+</head>
+
+<body class="login-page">
+	<div class="login-header box-shadow">
+		<div class="container-fluid d-flex justify-content-between align-items-center">
+			<div style="display:flex; align-items:center; gap:10px;">
+				<img src="src/images/files.gif" alt="img" style="height:40px; border-radius:40px;">
+				<span style="font-size:22px; color:#069ab4; font-weight:600;">
+					Update Tracker
+				</span>
+				<img src="src/images/files.gif" alt="img" style="height:40px; border-radius:40px;">
+			</div>
+			<div class="login-menu">
+				<ul>
+					<li><a href="#"><i class="icon-copy fa fa-user-plus" aria-hidden="true"></i> &nbsp; Register New
+							User</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="register-page-wrap d-flex align-items-center flex-wrap justify-content-center">
+		<div class="container" style="background-color: none;">
+			<div class="row align-items-center">
+				<div class="col-md-6 col-lg-7" style="background-color: none;">
+					<img src="src/images/add user.webp" alt style="height:100%; width:100%; margin-left: -50px;" />
+				</div>
+				<div class="col-md-6 col-lg-5">
+					<div class="login-box bg-white box-shadow border-radius-10" style="min-width:500px;">
+						<div class="login-title">
+							<h4 class="text-center text-yellow"><i class="icon-copy fa fa-edit" aria-hidden="true"></i>
+								&nbsp; Enter User Details Here</h4>
+						</div>
+						<form action="Users.html">
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-user-circle-o"
+										aria-hidden="true"></i> &nbsp;
+									Username</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control form-control-sm" name="user_name"
+										placeholder="Enter Username" />
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-id-badge"
+										aria-hidden="true"></i> &nbsp;
+									Process Name</label>
+								<div class="col-sm-8">
+									<select class="form-control form-control-sm selectpicker"
+										title="Select Process Name" name="process_name">
+										<option value="helpline">Helpline</option>
+										<option value="product complaint">Product Complaint</option>
+										<option value="web chat">Web Chat</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-desktop"
+										aria-hidden="true"></i> &nbsp;
+									Designation</label>
+								<div class="col-sm-8">
+									<select class="form-control form-control-sm selectpicker" title="Select Designation"
+										name="designation">
+										<option value="senior manager">Senior Manager</option>
+										<option value="manager">Manager</option>
+										<option value="assistant manager">Assistant Manager</option>
+										<option value="team leader">Team Leader</option>
+										<option value="quality analysts">Quality analysts</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-shield"
+										aria-hidden="true"></i> &nbsp; User
+									Type</label>
+								<div class="col-sm-8">
+									<select class="form-control form-control-sm selectpicker" title="Select User Type"
+										name="user_type">
+										<option value="admin">Admin</option>
+										<option value="employee">Employee</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-id-card-o"
+										aria-hidden="true"></i> &nbsp;
+									Aspect ID</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-sm" name="aspect_id"
+										placeholder="Enter Aspect ID" />
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label"><i class="icon-copy fa fa-lock"
+										aria-hidden="true"></i> &nbsp; User Password</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control form-control-sm" name="password"
+										placeholder="Enter Password" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="input-group mb-0">
+										<button class="btn btn-primary btn-sm btn-block"><i
+												class="icon-copy bi bi-clipboard-check-fill"></i> &nbsp; Add
+											User</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- js -->
+	<script src="vendors/scripts/core.js"></script>
+	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/process.js"></script>
+	<script src="vendors/scripts/layout-settings.js"></script>
+</body>
+
+</html>

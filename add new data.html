@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8" />
+	<title>Add New Updates</title>
+
+	<!-- Site favicon -->
+	<link rel="shortcut icon" href="src/images/tablogo.png">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css" />
+	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="login-header box-shadow">
+		<div class="container-fluid d-flex justify-content-between align-items-center">
+			<div class="header-left">
+				<span class="user-name" style="font-size:22px; color: #069ab4;">
+					<img src="src/images/files.gif" alt="img" style="border-radius:40px; height:40px;">Update Tracker
+				</span>
+			</div>
+			<div class="header-left" style="width: 100%; max-width: fit-content;">
+				<div class="dashboard-setting user-notification flex gap-5">
+					<a href="datatable.html">
+						<button type="button" class="btn btn-sm"
+							style="box-shadow: 0 0 10px #0000002e; margin-top: -10px; color: #d18f43;">
+							<img src="src/images/task.gif" alt="img" style="border-radius:40px; height:25px;"> All
+							Updates
+						</button>
+					</a>
+					<a href="Users.html">
+						<button type="button" class="btn btn-sm"
+							style="box-shadow: 0 0 10px #0000002e;margin-top: -10px; color: #d18f43;">
+							<img src="src/images/user.gif" alt="img" style="border-radius:40px; height:25px;"> All Users
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="user-info-dropdown">
+					<div class="dropdown">
+						<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+							<span class="user-icon">
+								<img src="src/images/userlogo.gif" alt="img" style="border-radius:40px; height:40px;">
+							</span>
+							<span class="user-name" style="font-size:14px;">Gaurav Singh</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+							<li class="dropdown-item" href="#"><i class="dw dw-user1"></i> Profile :
+								TL</li>
+							<li class="dropdown-item" href="#"><i class="icon-copy fa fa-id-badge"
+									aria-hidden="true"></i> Process :
+								Marketing</li>
+							<a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="register-page-wrap d-flex align-items-center flex-wrap justify-content-center">
+		<div class="container" style="background-color: none;">
+			<div class="min-height-200px box-shadow" style="background-color: none; margin-top: 0px;">
+				<div class="pd-20 card-box mb-30" style="width: 100%; background-color: none;">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4 class="text-blue h4"><i class="icon-copy bi bi-pencil-square"></i>
+								&nbsp; Enter Details Here</h4><br>
+						</div>
+					</div>
+					<form action="datatable.html">
+						<div class="row">
+							<!-- Existing form fields here -->
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Process</label>
+									<input type="text" class="form-control" name="process"
+										placeholder="Enter Process" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Sub-Process</label>
+									<input type="text" class="form-control" name="sub_process"
+										placeholder="Enter Sub-Process" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Update Sent By</label>
+									<input type="text" class="form-control" name="sent_by" placeholder="Sent By" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Update Received Date</label>
+									<input type="Date" class="form-control" name="received_date" placeholder="date" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Mode of Update Shared</label>
+									<select class="selectpicker form-control" name="mode_of_update">
+										<option value="none" selected disabled hidden>Select
+											Here</option>
+										<option value="Email">Email</option>
+										<option value="Telephonic">Telephonic</option>
+										<option value="Other Medium">Other
+											Medium</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Subject / Line / Title</label>
+									<input type="text" class="form-control" name="subject"
+										placeholder="Enter Subject / Line / Title" />
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12" style="background-color:none;">
+								<div class="form-group">
+									<label>Update Description In
+										Details</label>
+									<textarea class="form-control" name="description"
+										placeholder="Enter Description Here..."></textarea>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Update Validated By</label>
+									<input type="text" class="form-control" name="validated_by"
+										placeholder="Enter Update Validated By" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Date of Update Validated & Added
+										In Tracker</label>
+									<input type="date" class="form-control" name="date_of_update" placeholder="date" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Severity</label>
+									<select class="selectpicker form-control" name="severity">
+										<option value="none" selected disabled hidden>Select
+											Here</option>
+										<option value="High">High</option>
+										<option value="Medium">Medium</option>
+										<option value="Low">Low</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Update Type</label>
+									<input type="text" class="form-control" name="update_type"
+										placeholder="Enter Update Type" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Update Status</label>
+									<select class="selectpicker form-control" name="update_status">
+										<option value="none" selected disabled hidden>Select
+											Here</option>
+										<option value="Active">Active</option>
+										<option value="Inactive">Inactive</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Vaild For</label>
+									<select class="selectpicker form-control" name="vaild_for" id="validityPeriod"
+										onchange="toggleCustomDateRange()">
+										<option value="none" selected disabled hidden>Select
+											Here</option>
+										<option value="1 Month">1
+											Month</option>
+										<option value="2 Months">2
+											Months</option>
+										<option value="3 Months">3
+											Months</option>
+										<option value="4 Months">4
+											Months</option>
+										<option value="5 Months">5
+											Months</option>
+										<option value="6 Months">6
+											Months</option>
+										<option value="7 Months">7
+											Months</option>
+										<option value="8 Months">8
+											Months</option>
+										<option value="9 Months">9
+											Months</option>
+										<option value="10 Months">10
+											Months</option>
+										<option value="11 Months">11
+											Months</option>
+										<option value="12 Months">12
+											Months</option>
+										<option value="Always">Always</option>
+										<option value="Custom">Custom</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- Custom date range fields -->
+							<div class="col-md-4 col-sm-12" id="customDateRange" style="display:none;">
+								<div class="form-group">
+									<label>Start Date</label>
+									<input type="date" class="form-control" name="start_date"
+										placeholder="Start Date" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12" id="customEndDate" style="display:none;">
+								<div class="form-group">
+									<label>End Date</label>
+									<input type="date" class="form-control" name="end_date" placeholder="End Date" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>User Name</label>
+									<input type="text" class="form-control" name="user_name"
+										placeholder="Enter User Name" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="form-group">
+									<label>Aspect ID</label>
+									<input type="text" class="form-control" name="aspect_id"
+										placeholder="Enter Aspect ID" />
+								</div>
+							</div>
+						</div><br>
+						<div style="max-width: 100%; background-color: none; display: flex; justify-content:center;">
+							<a href="datatable.html">
+								<button type="button" class="btn btn-success btn-lg"><i
+										class="icon-copy bi bi-save2"></i>&nbsp;
+									Save Data</button>
+							</a>
+						</div><br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- js -->
+	<script src="vendors/scripts/core.js"></script>
+	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/process.js"></script>
+	<script src="vendors/scripts/layout-settings.js"></script>
+
+	<!-- Custom JS to handle custom date range -->
+	<script>
+		function toggleCustomDateRange() {
+			const validityPeriod = document.getElementById('validityPeriod').value;
+			const customDateRange = document.getElementById('customDateRange');
+			const customEndDate = document.getElementById('customEndDate');
+
+			if (validityPeriod === 'Custom') {
+				customDateRange.style.display = 'block';
+				customEndDate.style.display = 'block';
+			} else {
+				customDateRange.style.display = 'none';
+				customEndDate.style.display = 'none';
+			}
+		}
+	</script>
+</body>
+
+</html>
